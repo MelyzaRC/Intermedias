@@ -15,7 +15,7 @@ export class PrincipalComponent implements OnInit {
   }
 
   irACrear(){
-    this.servicio.mensaje(); 
+    this.router.navigateByUrl('crear');
   }
 
   irALeer(){
@@ -24,10 +24,6 @@ export class PrincipalComponent implements OnInit {
 
   irAActualizar(){
     this.router.navigateByUrl('actualizar');
-  }
-
-  irABorrar(){
-    this.router.navigateByUrl('borrar');
   }
 
 }
