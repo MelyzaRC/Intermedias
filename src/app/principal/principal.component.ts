@@ -22,8 +22,4 @@ export class PrincipalComponent implements OnInit {
     this.router.navigateByUrl('leer');
   }
 
-  irAActualizar(){
-    this.router.navigateByUrl('actualizar');
-  }
-
 }
