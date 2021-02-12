@@ -15,9 +15,7 @@ export class PrincipalComponent implements OnInit {
   }
 
   irACrear(){
-    this.servicio.mensaje();
-    this.router.navigateByUrl('crear');
-    
+    this.servicio.mensaje(); 
   }
 
   irALeer(){
