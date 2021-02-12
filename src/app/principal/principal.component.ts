@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ServicioService } from '../servicio.service';
 
 @Component({
   selector: 'app-principal',
@@ -8,13 +9,15 @@ import { Router } from '@angular/router';
 })
 export class PrincipalComponent implements OnInit {
 
-  constructor(public router: Router) { }
+  constructor(public servicio: ServicioService, public router: Router) { }
 
   ngOnInit(): void {
   }
 
   irACrear(){
+    this.servicio.mensaje();
     this.router.navigateByUrl('crear');
+    
   }
 
   irALeer(){
