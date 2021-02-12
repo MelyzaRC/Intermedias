@@ -31,7 +31,7 @@ export class LeerComponent implements OnInit {
   }
 
   public modificar(correo: any){
-    this.router.navigateByUrl('actualizar');
+    this.router.navigateByUrl(`actualizar/${correo}`);
   }
 
 }

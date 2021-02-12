@@ -7,7 +7,7 @@ import { CrearComponent } from './crear/crear.component';
 
 const routes: Routes = [
   {path:'principal', component: PrincipalComponent},
-  {path:'actualizar', component: ActualizarComponent},
+  {path:'actualizar/:correo', component: ActualizarComponent},
   {path:'leer', component: LeerComponent},
   {path:'crear', component: CrearComponent},
   {path: '**', component: PrincipalComponent}
