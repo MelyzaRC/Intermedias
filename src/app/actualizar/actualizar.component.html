@@ -1,1 +1,53 @@
-<p>actualizar works!</p>
+<br>
+<br>
+<div class="container h-100">
+    <div class="row justify-content-center h-100">
+        <div class="col-sm-10 align-self-center">
+            <div class="card shadow">
+                <div class="card-body"> 
+                   <div class="form-group text-center">
+                    <img width="300" src="https://miro.medium.com/max/670/1*hSNpnHADLYF0BXbWJejZCA.jpeg" class="img-fluid" alt="Responsive image">
+                   </div>
+                    <br>
+                    <br>
+                    <div class="form-container">
+                        <form>
+                           
+                            <div class="text-center">
+                                <h3>Actualizacion</h3> 
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="disabledTextInput" class="form-label">Nombre:</label>
+                                <input type="text" [ngModelOptions]="{standalone: true}" [(ngModel)]="NOMBRE" id="disabledTextInput" class="form-control" placeholder="Nombre">
+                            </div>
+
+
+                           <div class="form-group">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Correo:</label>
+                                    <input type="email"  [ngModelOptions]="{standalone: true}" [(ngModel)]="EMAIL" class="form-control" id="exampleFormControlInput1" placeholder="direccion@ejemplo.com">
+                                </div>
+                           </div>
+
+                            <div class="form-group">
+                                <div class="mb-3">
+                                    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                                    <input type="password"  [ngModelOptions]="{standalone: true}" [(ngModel)]="PASSWORD" class="form-control" id="inputPassword">
+                                </div>
+                            </div>
+                         
+
+                            <br>
+                            <br>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button class="btn btn-danger" type="button" (click) = 'irPrincipal()' >Atras</button>
+                            </div>
+                        </form> 
+                    </div>      
+                    <br>                
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

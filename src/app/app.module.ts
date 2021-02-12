@@ -7,7 +7,6 @@ import { PrincipalComponent } from './principal/principal.component';
 import { CrearComponent } from './crear/crear.component';
 import { LeerComponent } from './leer/leer.component';
 import { ActualizarComponent } from './actualizar/actualizar.component';
-import { BorrarComponent } from './borrar/borrar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
@@ -17,8 +16,7 @@ import { FormsModule } from '@angular/forms';
     PrincipalComponent,
     CrearComponent,
     LeerComponent,
-    ActualizarComponent,
-    BorrarComponent
+    ActualizarComponent
   ],
   imports: [
     BrowserModule,

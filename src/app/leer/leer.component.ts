@@ -30,4 +30,8 @@ export class LeerComponent implements OnInit {
     this.resultado = [];
   }
 
+  public modificar(correo: any){
+    this.router.navigateByUrl('actualizar');
+  }
+
 }

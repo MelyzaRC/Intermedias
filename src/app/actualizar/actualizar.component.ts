@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ServicioService } from '../servicio.service';
+
 
 @Component({
   selector: 'app-actualizar',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActualizarComponent implements OnInit {
 
-  constructor() { }
+
+  public EMAIL: any;
+  public PASSWORD: any;
+  public NOMBRE: any;
+
+  constructor(public servicio: ServicioService, public router: Router) { }
 
   ngOnInit(): void {
   }
 
+  public irPrincipal(){
+    this.router.navigateByUrl('/');
+  }
 }
