@@ -1,2 +1,2 @@
 # PracticaG7
-![MAT001](MAT001.png)
+![MAT001](src/app/MAT001.png)
